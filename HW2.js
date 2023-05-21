@@ -9,10 +9,9 @@
     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 */
 
-function letsEat() {
+function letsEat(hamburgers,fries) {
 
-    let hamburgers = 4;
-    let fries = 0;
+
     
     if(hamburgers >= 4 && fries >= 1){
         console.log('Мі поїли')
@@ -21,7 +20,7 @@ function letsEat() {
        console.log ("Ми йдемо в інше кафе")
     }
     }
-    letsEat();
+    letsEat(3,1);
     
     
     
@@ -29,9 +28,7 @@ function letsEat() {
     2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
         Результат виводити в консоль.*/
         
-    function priceRange() {
-        
-    let priceValue = 1600;
+    function priceRange(priceValue) {
     
     if(priceValue > 999 && priceValue < 1901)
     {
@@ -42,7 +39,7 @@ function letsEat() {
     console.log("Price value is not in the range")
     }
     }
-    priceRange();
+    priceRange(1900);
     
         
     
@@ -51,9 +48,7 @@ function letsEat() {
         Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
         Результат виводити в консоль.*/
     
-        function priceRange1() {
-    
-        let priceValue1 = 1000;
+        function priceRange1(priceValue1) {
     
         if(!(priceValue1 > 999 && priceValue1 < 1901)){
         console.log("Price value is in the range")
@@ -62,11 +57,9 @@ function letsEat() {
         console.log("Price value is not in the range")
         };
         }
-        priceRange1();
+        priceRange1(1000);
         
-        function priceRange2() {
-    
-        let priceValue2 = 1900;
+        function priceRange2(priceValue2) {
     
         if(priceValue2 > 999 && priceValue2 < 1901){
         console.log("Price value is not in the range")
@@ -75,16 +68,14 @@ function letsEat() {
             console.log("Price value is in the range")
         }
         }  
-        priceRange2();
+        priceRange2(2000);
     
     
     /*
     4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
         Результат виводити в консоль.*/
         
-    function yearTime(){
-    
-        let timeOfYear = 3;
+    function yearTime(timeOfYear){
         
         if(timeOfYear == 1){
         console.log("Winter")
@@ -98,8 +89,9 @@ function letsEat() {
         else if(timeOfYear == 4) {
         console.log("Autumn")
         }
+        else{ console.log("Please enter numbers in the range from 1 to 4")}
         }
-        yearTime();
+        yearTime(1);
     
         /*
     5.  Задано 3 числа (a, b, c), які не рівні між собою.
@@ -108,11 +100,7 @@ function letsEat() {
         Використати вкладені оператори if
         Результат виводити в консоль.*/
         
-        function findAverage(){
-        
-        let a = 3
-        let b = 1
-        let c = 1
+        function findAverage(a,b,c,){
     
         if(a < b && b < c){
             console.log('B is the average number')
@@ -131,16 +119,14 @@ function letsEat() {
             console.log('Numbers are equal or invalid')
         }
         }
-        findAverage();
+        findAverage(2,2,1);
     
     /*
     6.  Задано номер дня тижня.
         За заданим номером вивести назву дня тижня використовуючи switch.
         Результат виводити в консоль.*/
     
-        function weekDay(){
-    
-        let dayOfWeek = 6;
+        function weekDay(dayOfWeek){
     
         switch(dayOfWeek){
             case 7: 
@@ -169,47 +155,38 @@ function letsEat() {
                 break;  
         }
         }
-        weekDay();
+        weekDay(4);
     
     /*
     7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
         Математичні операції для обчислення: "+", "-", "*", "/".
         Результат виводити в консоль.*/
         
-        function mathOperations(){
-    
-        let operation = '+'; 
-    
-    switch(operation){
-        case '+': 
-            console.log(5 + 5);
-            break;
-        case '-': 
-            console.log(5 - 5);
-            break;
-        case '*': 
-            console.log(5 * 5);
-            break;
-        case '/': 
-            console.log(5 / 5);
-            break;  
-        default:
-            console.log('This is default, no maths');
-            break;  
+        function sum (a,b){
+            return (a + b);   
         }
+        
+        function divide(a,b){
+            return (a / b);
         }
-        mathOperations();
-    
+        
+        function minus(a,b){
+            return (a - b);
+        }
+        function multiply(a,b){
+            return (a * b);
+        }
+        console.log(multiply(7, 10));
     /*
     8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.*/
     
-        function removeVoewls() {
+        function removeVowels(str) {
     
-        let str = 'Regular Expression';
+        
         str = str.replace(/[aouiye]+/g, '');
         console.log(str);
         }
-        removeVoewls();
+        removeVowels("Regular Expression");
     
     /*
     9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
