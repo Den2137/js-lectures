@@ -9,188 +9,212 @@
     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 */
 
+function letsEat() {
 
-let hamburgers = 4;
-let fries = 1;
-
-if(hamburgers >= 4 && fries >= 1){
-    console.log('Мі поїли')
-}
-else{ 
-   console.log ("Ми йдемо в інше кафе")
-}
-
-
-
-
-
-/*
-2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
-    Результат виводити в консоль.*/
+    let hamburgers = 4;
+    let fries = 0;
+    
+    if(hamburgers >= 4 && fries >= 1){
+        console.log('Мі поїли')
+    }
+    else{ 
+       console.log ("Ми йдемо в інше кафе")
+    }
+    }
+    letsEat();
     
     
-let priceValue = 999;
-
-if(priceValue > 999 && priceValue < 1901)
-{
-console.log("Price value is in the range")
-}
-else
-{
-console.log("Price value is not in the range")
-}
-
-
     
-
-/*
-3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
-    Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
-    Результат виводити в консоль.*/
-
-    let priceValue1 = 2000;
-
-    if(!(priceValue1 > 999 && priceValue1 < 1901)){
+    /*
+    2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
+        Результат виводити в консоль.*/
+        
+    function priceRange() {
+        
+    let priceValue = 1600;
+    
+    if(priceValue > 999 && priceValue < 1901)
+    {
     console.log("Price value is in the range")
     }
-    else{
-    console.log("Price value is not in the range")
-    };
-
-    let priceValue2 = 1901;
-
-    if(priceValue2 > 999 && priceValue2 < 1901){
+    else
+    {
     console.log("Price value is not in the range")
     }
-    else{
-        console.log("Price value is in the range")
     }
+    priceRange();
     
-
-
-
-/*
-4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
-    Результат виводити в консоль.*/
+        
     
-    let timeOfYear = 4;
-    
-    if(timeOfYear == 1){
-    console.log("Winter")
-    } 
-    else if (timeOfYear == 2){
-    console.log("Spring")
-    } 
-    else if(timeOfYear == 3) {
-    console.log("Summer")
-    }
-    else if(timeOfYear == 4) {
-    console.log("Autumn")
-    }
-    
-
-
     /*
-5.  Задано 3 числа (a, b, c), які не рівні між собою.
-    Визначити середнє мід цими трьома числами
-    (не середнє арифметичне значення, а яке з трьох заданих чисел среднє за значенням) використовуючи оператор if-else.
-    Використати вкладені оператори if
-    Результат виводити в консоль.*/
+    3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
+        Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
+        Результат виводити в консоль.*/
     
-    let a = 2
-    let b = 3
-    let c = 1
-
-    if(a < b && b < c){
-        console.log('B is the average number')
-    } else if (b < a && a < c) {
-        console.log('A is the average number')
-    } else if(c < a && a < b) {
-        console.log('A is the average number')
-    } else if(c < b && b < a) {
-        console.log('B is the average number')
-    }
-      else if(b < c && c < a) {
-        console.log('C is the average number')
-    } else if(a < c && c < b) {
-        console.log('C is the average number')
-    } else {
-        console.log('Other non-valid cases')
-    }
-
-
-/*
-6.  Задано номер дня тижня.
-    За заданим номером вивести назву дня тижня використовуючи switch.
-    Результат виводити в консоль.*/
-
-    let dayOfWeek = 1000;
-
-    switch(dayOfWeek){
-        case 7: 
-            console.log('Sunday');
+        function priceRange1() {
+    
+        let priceValue1 = 1000;
+    
+        if(!(priceValue1 > 999 && priceValue1 < 1901)){
+        console.log("Price value is in the range")
+        }
+        else{
+        console.log("Price value is not in the range")
+        };
+        }
+        priceRange1();
+        
+        function priceRange2() {
+    
+        let priceValue2 = 1900;
+    
+        if(priceValue2 > 999 && priceValue2 < 1901){
+        console.log("Price value is not in the range")
+        }
+        else{
+            console.log("Price value is in the range")
+        }
+        }  
+        priceRange2();
+    
+    
+    /*
+    4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
+        Результат виводити в консоль.*/
+        
+    function yearTime(){
+    
+        let timeOfYear = 3;
+        
+        if(timeOfYear == 1){
+        console.log("Winter")
+        } 
+        else if (timeOfYear == 2){
+        console.log("Spring")
+        } 
+        else if(timeOfYear == 3) {
+        console.log("Summer")
+        }
+        else if(timeOfYear == 4) {
+        console.log("Autumn")
+        }
+        }
+        yearTime();
+    
+        /*
+    5.  Задано 3 числа (a, b, c), які не рівні між собою.
+        Визначити середнє мід цими трьома числами
+        (не середнє арифметичне значення, а яке з трьох заданих чисел среднє за значенням) використовуючи оператор if-else.
+        Використати вкладені оператори if
+        Результат виводити в консоль.*/
+        
+        function findAverage(){
+        
+        let a = 3
+        let b = 1
+        let c = 1
+    
+        if(a < b && b < c){
+            console.log('B is the average number')
+        } else if (b < a && a < c) {
+            console.log('A is the average number')
+        } else if(c < a && a < b) {
+            console.log('A is the average number')
+        } else if(c < b && b < a) {
+            console.log('B is the average number')
+        }
+          else if(b < c && c < a) {
+            console.log('C is the average number')
+        } else if(a < c && c < b) {
+            console.log('C is the average number')
+        } else {
+            console.log('Numbers are equal or invalid')
+        }
+        }
+        findAverage();
+    
+    /*
+    6.  Задано номер дня тижня.
+        За заданим номером вивести назву дня тижня використовуючи switch.
+        Результат виводити в консоль.*/
+    
+        function weekDay(){
+    
+        let dayOfWeek = 6;
+    
+        switch(dayOfWeek){
+            case 7: 
+                console.log('Sunday');
+                break;
+            case 6: 
+                console.log('Saturday');
+                break;
+            case 5: 
+                console.log('Friday');
+                break;
+            case 4: 
+                console.log('Tuesday');
+                break;
+            case 3: 
+                console.log('Wednesday');
+                break; 
+            case 2: 
+                console.log('Thursday');
+                break;      
+            case 1: 
+                console.log('Monday');
+                break;                
+            default:
+                console.log('Please enter numbers from 1 to 7 to get some Day of Week');
+                break;  
+        }
+        }
+        weekDay();
+    
+    /*
+    7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
+        Математичні операції для обчислення: "+", "-", "*", "/".
+        Результат виводити в консоль.*/
+        
+        function mathOperations(){
+    
+        let operation = '+'; 
+    
+    switch(operation){
+        case '+': 
+            console.log(5 + 5);
             break;
-        case 6: 
-            console.log('Saturday');
+        case '-': 
+            console.log(5 - 5);
             break;
-        case 5: 
-            console.log('Friday');
+        case '*': 
+            console.log(5 * 5);
             break;
-        case 4: 
-            console.log('Tuesday');
-            break;
-        case 3: 
-            console.log('Wednesday');
-            break; 
-        case 2: 
-            console.log('Thursday');
-            break;      
-        case 1: 
-            console.log('Monday');
-            break;                
-        default:
-            console.log('Please enter numbers from 1 to 7 to get some Day of Week');
+        case '/': 
+            console.log(5 / 5);
             break;  
-    }
-
-
-/*
-7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
-    Математичні операції для обчислення: "+", "-", "*", "/".
-    Результат виводити в консоль.*/
+        default:
+            console.log('This is default, no maths');
+            break;  
+        }
+        }
+        mathOperations();
     
-    let operation = '/'; 
-
-switch(operation){
-    case '+': 
-        console.log(5 + 5);
-        break;
-    case '-': 
-        console.log(5 - 5);
-        break;
-    case '*': 
-        console.log(5 * 5);
-        break;
-    case '/': 
-        console.log(5 / 5);
-        break;  
-    default:
-        console.log('This is default, no maths');
-        break;  
-}
-
-/*
-8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.*/
-
-    let str = 'Regular Expression';
-    str = str.replace(/[aouiye]+/g, '');
-    console.log(str);
-
-/*
-9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
-    так щоб в консоль виводився результат обчислень з правильним закінченням.
-    Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
-
-    Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)*/
-
-    // Выбачаюся, скілоў пакуль не хапае каб зрабіць сваё рашэнне, а перапісваць разбор не бачу сэнсу
+    /*
+    8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.*/
+    
+        function removeVoewls() {
+    
+        let str = 'Regular Expression';
+        str = str.replace(/[aouiye]+/g, '');
+        console.log(str);
+        }
+        removeVoewls();
+    
+    /*
+    9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
+        так щоб в консоль виводився результат обчислень з правильним закінченням.
+        Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
+    
+        Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)*/
+    
