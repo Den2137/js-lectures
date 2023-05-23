@@ -193,3 +193,4 @@ switch(operation){
 
     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)*/
 
+    // Выбачаюся, скілоў пакуль не хапае каб зрабіць сваё рашэнне, а перапісваць разбор не бачу сэнсу
